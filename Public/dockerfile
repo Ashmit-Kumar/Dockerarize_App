@@ -1,0 +1,7 @@
+# Use the official nginx image
+FROM nginx:1.27.1
+
+# copy Html js css files into a directory
+COPY . /usr/share/nginx/html/
+
+EXPOSE  80

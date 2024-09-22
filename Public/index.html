@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Update</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div id="user-profile">
+            <img id="user-photo" src="" alt="User Photo" class="profile-photo">
+            <h2>User Details</h2>
+            <p><strong>Name:</strong> <span id="display-name">Guest Name</span></p>
+            <p><strong>Email:</strong> <span id="display-email">Guest Email</span></p>
+        </div>
+        <div id="input-area">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="photo">Profile Photo URL:</label>
+            <input type="url" id="photo" placeholder="https://example.com/photo.jpg">
+            <button id="submit-button">Submit</button>
+        </div>
+        <div id="user-list">
+            <h2>All Visited Users</h2>
+            <ul id="users"></ul>
+            <p><strong>Total Visitors:</strong> <span id="visitor-count">0</span></p>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -6,6 +6,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - db_data:/data/db
   mongodb-express:
     image: mongo-express
     ports: 
@@ -16,11 +18,11 @@ services:
       - ME_CONFIG_MONGODB_PORT=27017
       - ME_CONFIG_MONGODB_SERVER=mongodb
   frontend: 
-    image: my_app
+    image: ashmit1020/my_app:v.1.0
     ports:
       - 2002:80
   backend:
-    image: my_api
+    image: ashmit1020/my_api:v.1.0
     ports:
       - 3000:3000
     environment:
@@ -28,3 +30,6 @@ services:
       PORT: 3000
     depends_on:
         - mongodb
+volumes:
+  db_data: 
+    driver: local

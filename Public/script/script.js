@@ -52,49 +52,11 @@ document.getElementById('submit-button').addEventListener('click', async functio
 
         // Update user list and visitor count
         updateUserList(userData.users);
-        document.getElementById('visitor-count').innerText = userData.visitorCount;
+        document.getElementById('visitor-count').innerText = userData.visitorCount-1;
     } else {
         console.error('Failed to add user:', data.message);
     }
 });
-
-// document.getElementById('submit-button').addEventListener('click', async function () {
-//     const name = document.getElementById('name').value || 'Guest Name';
-//     const email = document.getElementById('email').value || 'Guest Email';
-//     const photo = document.getElementById('photo').value;
-
-//     const response = await fetch('http://localhost:3000/api/users', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({ name, email, photo }),
-//     });
-
-//     const data = await response.json();
-
-//     // Update displayed user data
-//     document.getElementById('display-name').innerText = name;
-//     document.getElementById('display-email').innerText = email;
-
-//     // Update user photo
-//     const userPhoto = document.getElementById('user-photo');
-//     userPhoto.src = photo || '';
-//     userPhoto.alt = `${name}'s Profile Photo`;
-
-//     // Clear input fields
-//     document.getElementById('name').value = '';
-//     document.getElementById('email').value = '';
-//     document.getElementById('photo').value = '';
-
-//     // Fetch updated user list and visitor count
-//     const userResponse = await fetch('http://localhost:3000/api/users');
-//     const userData = await userResponse.json();
-
-//     // Update user list and visitor count
-//     updateUserList(userData.users);
-//     document.getElementById('visitor-count').innerText = userData.visitorCount;
-// });
 
 function updateUserList(users) {
     const usersList = document.getElementById('users');

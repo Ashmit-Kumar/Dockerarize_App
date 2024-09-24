@@ -137,5 +137,5 @@ This project is licensed under the [MIT](https://github.com/Ashmit-Kumar/Dockeri
 
 ## Contact
 For any questions or inquiries, feel free to reach out to me at:
-- [Gmail](ashmitkumar1020@gmail.com)
-- [Linkedin](www.linkedin.com/in/ashmitkumar1020)
+> ashmitkumar1020@gmail.com
+- [Linkedin](https://www.linkedin.com/in/ashmitkumar1020/)

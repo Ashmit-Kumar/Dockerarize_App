@@ -119,7 +119,7 @@ docker-compose logs
 ```
 or 
 ```bash
-docker exec -it <backend-container-name> 
+docker exec -it <backend-container-name> /bin/bash
 ```
 
 ## Contributions

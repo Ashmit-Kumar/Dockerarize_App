@@ -22,7 +22,7 @@ services:
     ports:
       - 2002:80
   backend:
-    image: ashmit1020/my_api:v.1.0
+    image: ashmit1020/my_api:v.1.1
     ports:
       - 3000:3000
     environment:

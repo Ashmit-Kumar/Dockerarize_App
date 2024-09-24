@@ -18,7 +18,7 @@ services:
       - ME_CONFIG_MONGODB_PORT=27017
       - ME_CONFIG_MONGODB_SERVER=mongodb
   frontend: 
-    image: ashmit1020/my_app:v.1.0
+    image: ashmit1020/my_app:v.1.1
     ports:
       - 2002:80
   backend:
